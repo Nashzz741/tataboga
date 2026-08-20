@@ -50,7 +50,11 @@ export default function Footer() {
         {/* SOSIAL MEDIA */}
         <div className="flex gap-3">
           {[
-            { icon: FaInstagram, href: "#", label: "Instagram" },
+            {
+              icon: FaInstagram,
+              href: "https://www.instagram.com/tataboga.smkn1sbg/",
+              label: "Instagram",
+            },
             { icon: FaTiktok, href: "#", label: "TikTok" },
             { icon: FaYoutube, href: "#", label: "YouTube" },
             { icon: FaWhatsapp, href: "#", label: "WhatsApp" },
