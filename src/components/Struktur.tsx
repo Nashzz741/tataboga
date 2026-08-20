@@ -29,9 +29,9 @@ const structureData = {
   },
   executives: [
     {
-      name: "Ahmad Zaky Musyaffa",
+      name: "Eka safira",
       role: "Ketua Eskul",
-      image: "/images/ketua.png",
+      image: "image.png",
       transform: { scale: 1.2, x: "0%", y: "0%", fit: "cover" as const },
       icon: <Crown className="w-5 h-5 text-[#8C532B]" />,
     },
@@ -71,6 +71,13 @@ const structureData = {
       name: "libby bilqis audrey M",
       role: "Absensi II",
       image: "image1.png",
+      transform: { scale: 0.9, x: "0%", y: "5%", fit: "contain" as const },
+      icon: <ClipboardCheck className="w-5 h-5 text-[#8C532B]" />,
+    },
+    {
+      name: "Vidya izzatunnisa",
+      role: "Absensi III",
+      image: "image9.png",
       transform: { scale: 0.9, x: "0%", y: "5%", fit: "contain" as const },
       icon: <ClipboardCheck className="w-5 h-5 text-[#8C532B]" />,
     },
