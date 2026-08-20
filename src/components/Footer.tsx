@@ -55,9 +55,9 @@ export default function Footer() {
               href: "https://www.instagram.com/tataboga.smkn1sbg/",
               label: "Instagram",
             },
-            { icon: FaTiktok, href: "#", label: "TikTok" },
-            { icon: FaYoutube, href: "#", label: "YouTube" },
-            { icon: FaWhatsapp, href: "#", label: "WhatsApp" },
+            { icon: FaTiktok, href: "https://www.tiktok.com", label: "TikTok" },
+            { icon: FaYoutube, href: "https://www.youtube.com", label: "YouTube" },
+            { icon: FaWhatsapp, href: "https://wa.me/", label: "WhatsApp" },
           ].map((social, idx) => {
             const Icon = social.icon;
             return (
