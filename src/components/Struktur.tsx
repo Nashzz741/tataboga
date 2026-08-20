@@ -32,7 +32,7 @@ const structureData = {
       name: "Eka safira",
       role: "Ketua Eskul",
       image: "image.png",
-      transform: { scale: 1.2, x: "0%", y: "0%", fit: "cover" as const },
+      transform: { scale: 0.9, x: "0%", y: "0%", fit: "cover" as const },
       icon: <Crown className="w-5 h-5 text-[#8C532B]" />,
     },
     {
@@ -225,7 +225,7 @@ export default function Structure() {
           <div className="w-0.5 h-12 bg-[#5C3A21]/10" />
 
           {/* ABSENSI (1-2) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
             {structureData.absensi.map((item, index) => (
               <motion.div
                 key={index}
