@@ -31,7 +31,7 @@ const structureData = {
     {
       name: "Eka Safira",
       role: "Ketua Eskul",
-      image: "image14.png",
+      image: "image.png",
       transform: { scale: 1.3, x: "0%", y: "10%", fit: "contain" as const },
       icon: <Crown className="w-5 h-5 text-[#8C532B]" />,
     },
@@ -128,19 +128,13 @@ const structureData = {
       icon: <Camera className="w-5 h-5 text-[#8C532B]" />,
     },
     {
-      name: "Dokumentasi 4",
-      role: "Dokumentasi IV",
-      image: "/images/dokumen4.png",
-      transform: { scale: 1.2, x: "0%", y: "0%", fit: "cover" as const },
-      icon: <Camera className="w-5 h-5 text-[#8C532B]" />,
-    },
-    {
       name: "Melinda Putri Andini",
-      role: "Dokumentasi V",
-      image: "/images/dokumen5.png",
+      role: "Dokumentasi IV",
+      image: "image16.png",
       transform: { scale: 1.2, x: "0%", y: "0%", fit: "cover" as const },
       icon: <Camera className="w-5 h-5 text-[#8C532B]" />,
     },
+   
   ],
 };
 
@@ -259,23 +253,19 @@ export default function Structure() {
           <div className="w-0.5 h-12 bg-[#5C3A21]/10" />
 
           {/* DOKUMENTASI (1-5) */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
-            {structureData.dokumentasi.map((item, index) => {
-              const isFifthCard = index === 4;
-
-              return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className={isFifthCard ? "md:col-start-3" : ""}
-                >
-                  <BigMemberCard {...item} />
-                </motion.div>
-              );
-            })}
+          <div className="flex flex-nowrap gap-6 w-full max-w-6xl overflow-x-auto pb-4 scrollbar-thin">
+            {structureData.dokumentasi.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="flex-shrink-0 w-72 md:w-80"
+              >
+                <BigMemberCard {...item} />
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
